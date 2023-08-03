@@ -1,0 +1,13 @@
+{% extends 'news/base.html'%}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{{news.title}}{% endblock title %}
+
+{% block content %}
+    <h2 class="text-center">{% blocktrans %}Delete News{% endblocktrans %}</h2>
+    <form method="post">{% csrf_token %}
+    <p>{{ news.title | truncatewords:4 }} ... {% blocktrans %} Do you want to delete the news?{% endblocktrans %}</p>
+    <button type="submit" class="btn btn-danger ml-2">{% blocktrans %}Delete{% endblocktrans %}</button>
+    </form>
+{% endblock content %}

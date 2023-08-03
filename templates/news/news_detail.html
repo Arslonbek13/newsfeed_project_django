@@ -1,0 +1,57 @@
+{% extends 'news/base.html'%}
+{% load static %}
+{% load hitcount_tags %}
+{% load i18n %}
+
+{% block title %}{{news.title}}{% endblock title %}
+
+{% block content %}
+
+  <div class="containerr">
+    <h2 style="border-bottom: 2px solid #ccc; padding-bottom: 20px; font-size: 24px;">{{news.title}}</h2>
+    <h5>{{news.publish_time}} | Views: <i class="fa fa-eye" aria-hidden="true"></i> {% get_hit_count for news %} | Comments: {{ comment_count }} </h5>
+    <img style="width:100%" src="{{news.image.url}}">
+    <p>{{news.body}}</p>
+  </div>
+
+{% if request.user.is_authenticated and request.user.is_superuser %}
+     <div class="card-footer text-center">
+         <a href="{% url 'news_update'  news.slug %}"><button type="submit" class="btn btn-info ml-2">{% blocktrans %}Edit{% endblocktrans %}</button></a>
+         <a href="{% url 'news_delete'  news.slug %}"><button type="submit" class="btn btn-danger ml-2">{% blocktrans %}Delete{% endblocktrans %}</button></a>
+     </div>
+{% endif %}
+
+<h3>{% blocktrans %}There are {{ comment_count }} comments on this news{% endblocktrans %}</h3>
+
+{% for comment in comments %}
+
+     <div class="comments" style="padding: 10px">
+         <p class="font-weight-bold">
+             {{ comment.user }}
+         <span class="text-muted font-weight-normal">
+             {{ comment.created_time }}
+         </span>
+         </p>
+         {{ comment.body | linebreaks }}
+     </div>
+
+{% endfor %}
+
+{% if user.is_authenticated %}
+     <div class=" container col-md-8 card mb-4 mt-3">
+         <div class="card-body">
+             <h3 class="card-title">{% blocktrans %}Leave comment{% endblocktrans %}</h3>
+             <form method="POST" style="margin-top: 1.3em">{% csrf_token %}
+                {{ comment_form.as_p }}
+                 <button type="submit" class="btn btn-primary btn-lg">{% blocktrans %}Send{% endblocktrans %}</button>
+             </form>
+         </div>
+     </div>
+{% else %}
+     <div class="card-body">
+         <p class="text-danger">{% blocktrans %}Only registered users can leave comments{% endblocktrans %}</p>
+         <p> <a href="{% url 'user_register' %}" class="text-danger">{% blocktrans %}Register{% endblocktrans %}</a>{% blocktrans %} to leave a comment or {% endblocktrans %}<a href="{% url 'login' %}" class="text-danger">{% blocktrans %}login{% endblocktrans %}</a> {% blocktrans %}the site.{% endblocktrans %}</p>
+     </div>
+{% endif %}
+{% endblock content %}
+

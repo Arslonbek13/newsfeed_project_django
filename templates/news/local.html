@@ -1,0 +1,24 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load hitcount_tags %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}Local News{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+
+     {% for news in local_news %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                  <a href="{{news.get_absolute_url}}">
+                    <img src="{{ news.image.url }}" alt="{{ news.title }}" style="width:100%">
+                    <h2 style="border-bottom: 2px solid #ccc; padding-bottom: 20px; font-size: 24px;">{{news.title}}</h2>
+                    <h6> Views:<i class="fa fa-eye" aria-hidden="true"></i> {% get_hit_count for news %} </h6>
+                  </a>
+                </div>
+            </div>
+        </div>
+     {% endfor %}
+
+{% endblock content %}

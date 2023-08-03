@@ -1,0 +1,13 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% blocktrans %}Register users{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+    <h1>{% blocktrans %}Register new users{% endblocktrans %}</h1>
+    <p>{% blocktrans %}Fill out the form below to register{% endblocktrans %}</p>
+    <form method="post">{% csrf_token %}
+       {{ user_form.as_p }}
+        <button type="submit" class="btn btn-primary">{% blocktrans %}Register{% endblocktrans %}</button>
+    </form>
+{% endblock content %}

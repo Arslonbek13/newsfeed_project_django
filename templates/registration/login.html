@@ -1,0 +1,18 @@
+{% extends 'news/base.html' %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}Login Page{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+     <h2>{% blocktrans %}Login{% endblocktrans %}</h2>
+     <p>{% blocktrans %}Please fill out the form below to enter the site.{% endblocktrans %}</p>
+     <h5>{% blocktrans %}If you forgot your password,{% endblocktrans %}<a href="{% url 'password_reset' %}" class="text-danger">{% blocktrans %}reset it{% endblocktrans %}</a></h5>
+     <form method="post">{% csrf_token %}
+          {{ form.as_p }}
+       <button type="submit" class="btn btn-primary">{% blocktrans %}Login{% endblocktrans %}</button>
+     </form>
+     <h4>{% blocktrans %}Don't have an account? {% endblocktrans %}<a href="{% url 'user_register' %}" class="text-danger">{% blocktrans %}Signup{% endblocktrans %}</a> </h4>
+{% endblock content %}
+
+
+

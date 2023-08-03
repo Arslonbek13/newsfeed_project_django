@@ -1,0 +1,552 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-29 13:08+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\news_2\settings.py:122
+msgid "English"
+msgstr "Английский"
+
+#: .\news_2\settings.py:123
+msgid "Uzbek"
+msgstr "Узбек"
+
+#: .\news_2\settings.py:124
+msgid "Russian"
+msgstr "Русский"
+
+#: .\templates\account\profile_edit.html:4
+msgid "Change user information"
+msgstr "Изменить информацию о пользователе"
+
+#: .\templates\account\profile_edit.html:7
+msgid "Change user information."
+msgstr "Изменить информацию о пользователе."
+
+#: .\templates\account\profile_edit.html:8
+msgid "You can change your information by filling out the form below."
+msgstr "Вы можете изменить свою информацию, заполнив форму ниже."
+
+#: .\templates\account\profile_edit.html:12
+msgid "Save the change"
+msgstr "Сохранить изменения"
+
+#: .\templates\account\register.html:4
+msgid "Register users"
+msgstr "Регистрация пользователей"
+
+#: .\templates\account\register.html:7
+msgid "Register new users"
+msgstr "Зарегистрировать новых пользователей"
+
+#: .\templates\account\register.html:8
+msgid "Fill out the form below to register"
+msgstr "Заполните форму ниже для регистрации"
+
+#: .\templates\account\register.html:11 .\templates\news\news_detail.html:53
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: .\templates\account\register_done.html:4
+#: .\templates\account\register_done.html:7
+msgid "You have successfully registered."
+msgstr "Вы успешно зарегистрировались."
+
+#: .\templates\account\register_done.html:8
+msgid "You have successfully registered!"
+msgstr "Вы успешно зарегистрировались!"
+
+#: .\templates\account\register_done.html:9
+msgid "You can "
+msgstr "Вы можете "
+
+#: .\templates\account\register_done.html:9
+#: .\templates\news\news_detail.html:53
+#: .\templates\registration\password_reset_complete.html:8
+#, fuzzy
+#| msgid "Login"
+msgid "login"
+msgstr "Авторизоваться"
+
+#: .\templates\account\register_done.html:9
+msgid " to the site"
+msgstr " на сайт"
+
+#: .\templates\crud\news_create.html:5 .\templates\crud\news_create.html:8
+#: .\templates\crud\news_create.html:11
+#, fuzzy
+#| msgid "World News"
+msgid "Add News"
+msgstr "Мировые новости"
+
+#: .\templates\crud\news_delete.html:8
+msgid "Delete News"
+msgstr "Удалить новость"
+
+#: .\templates\crud\news_delete.html:10
+msgid " Do you want to delete the news?"
+msgstr "Хотите удалить новость?"
+
+#: .\templates\crud\news_delete.html:11 .\templates\news\news_detail.html:20
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\crud\news_edit.html:8
+#, fuzzy
+#| msgid "World News"
+msgid "Edit News"
+msgstr "Мировые новости"
+
+#: .\templates\crud\news_edit.html:11 .\templates\news\news_detail.html:19
+msgid "Edit"
+msgstr "Редактировать"
+
+#: .\templates\news\404.html:5
+#, fuzzy
+#| msgid " Home Page "
+msgid " 404 Page "
+msgstr "Домашняя страница"
+
+#: .\templates\news\404.html:12
+msgid "We Are Sorry"
+msgstr "Мы сожалеем"
+
+#: .\templates\news\404.html:14
+msgid ""
+"Unfortunately, the page you were looking for could not be found. It may be "
+"temporarily unavailable, moved or no longer exists"
+msgstr ""
+"К сожалению, страница, которую вы искали, не может быть найдена. Возможно, "
+"она временно недоступна, перемещена или больше не существует."
+
+#: .\templates\news\404.html:21 .\templates\news\contact.html:26
+#: .\templates\news\index.html:210
+msgid "Popular Post"
+msgstr "Популярное сообщение"
+
+#: .\templates\news\base.html:32 .\templates\news\base.html:99
+msgid "Home"
+msgstr "Домой"
+
+#: .\templates\news\base.html:33
+msgid "About"
+msgstr "О нас"
+
+#: .\templates\news\base.html:34 .\templates\news\base.html:174
+msgid "Contact"
+msgstr "Контакты"
+
+#: .\templates\news\base.html:36
+msgid "Admin page"
+msgstr "Страница администратора"
+
+#: .\templates\news\base.html:58 .\templates\news\base.html:94
+#: .\templates\pages\user_profile.html:9
+#: .\templates\registration\logged_out.html:7
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\templates\news\base.html:59 .\templates\news\base.html:93
+msgid "My Profile"
+msgstr "Мой профиль"
+
+#: .\templates\news\base.html:61 .\templates\news\base.html:96
+msgid "Login to the site"
+msgstr "Войти на сайт"
+
+
+#: .\templates\news\base.html:100 .\templates\news\index.html:49
+#: .\templates\news\local.html:6
+#, fuzzy
+#| msgid "Local News"
+msgid "Local News"
+msgstr "Новости местных событий"
+
+#: .\templates\news\base.html:101 .\templates\news\index.html:82
+#: .\templates\news\world.html:6
+#, fuzzy
+#| msgid "World News"
+msgid "World News"
+msgstr "Всемирные новости"
+
+#: .\templates\news\base.html:102 .\templates\news\index.html:111
+#, fuzzy
+#| msgid "Technology"
+msgid "Technology"
+msgstr "Технологии"
+
+#: .\templates\news\base.html:103 .\templates\news\index.html:175
+#, fuzzy
+#| msgid "Sport"
+msgid "Sport"
+msgstr "Спорт"
+
+#: .\templates\news\base.html:104
+msgid "Mobile"
+msgstr "Мобильные"
+
+#: .\templates\news\base.html:113 .\templates\news\contact.html:12
+msgid "Contact Us"
+msgstr "Свяжитесь с нами"
+
+#: .\templates\news\base.html:114
+msgid "404 Page"
+msgstr "Страница 404"
+
+#: .\templates\news\base.html:127
+#, fuzzy
+#| msgid "Delete News"
+msgid "Latest News"
+msgstr "Удалить новость"
+
+#: .\templates\news\base.html:159
+msgid "Flickr Images"
+msgstr "Изображения Flickr"
+
+#: .\templates\news\contact.html:5
+#, fuzzy
+#| msgid "Contact Us"
+msgid " Contact Page "
+msgstr "Свяжитесь с нами"
+
+#: .\templates\news\index.html:6
+#, fuzzy
+#| msgid " Home Page "
+msgid " Home Page "
+msgstr "Домашняя страница"
+
+#: .\templates\news\index.html:24
+msgid "Latest post"
+msgstr "Последний пост"
+
+#: .\templates\news\index.html:32 .\templates\news\index.html:58
+#: .\templates\news\index.html:71 .\templates\news\index.html:90
+#: .\templates\news\index.html:101 .\templates\news\index.html:119
+#: .\templates\news\index.html:130 .\templates\news\index.html:184
+msgid "Views:"
+msgstr "Просмотры:"
+
+#: .\templates\news\index.html:140
+msgid "Photography"
+msgstr "Фотография"
+
+#: .\templates\news\index.html:214 .\templates\news\index.html:257
+#, fuzzy
+#| msgid "Aliquam malesuada diam eget turpis varius 3"
+msgid "Aliquam malesuada diam eget turpis varius 1"
+msgstr "Aliquam malesuada diam eget turpis varius 3"
+
+#: .\templates\news\index.html:219 .\templates\news\index.html:262
+#, fuzzy
+#| msgid "Aliquam malesuada diam eget turpis varius 3"
+msgid "Aliquam malesuada diam eget turpis varius 2"
+msgstr "Aliquam malesuada diam eget turpis varius 3"
+
+#: .\templates\news\index.html:224
+#, fuzzy
+#| msgid "Aliquam malesuada diam eget turpis varius 3"
+msgid " Aliquam malesuada diam eget turpis varius 3"
+msgstr "Aliquam malesuada diam eget turpis varius 3"
+
+#: .\templates\news\index.html:229 .\templates\news\index.html:272
+#, fuzzy
+#| msgid "Aliquam malesuada diam eget turpis varius 3"
+msgid "Aliquam malesuada diam eget turpis varius 4"
+msgstr "Aliquam malesuada diam eget turpis varius 3"
+
+#: .\templates\news\index.html:236
+msgid "Category"
+msgstr "Категория"
+
+#: .\templates\news\index.html:237
+msgid "Video"
+msgstr "Видео"
+
+#: .\templates\news\index.html:238
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\templates\news\index.html:267
+msgid "Aliquam malesuada diam eget turpis varius 3"
+msgstr "Aliquam malesuada diam eget turpis varius 3"
+
+#: .\templates\news\index.html:280
+msgid "Sponsor"
+msgstr "Спонсор"
+
+#: .\templates\news\index.html:283
+msgid "Category Archive"
+msgstr "Архив категории"
+
+#: .\templates\news\index.html:285
+msgid "Select Category"
+msgstr "Выберите категорию"
+
+#: .\templates\news\index.html:292
+msgid "Links"
+msgstr "Ссылки"
+
+#: .\templates\news\index.html:294
+msgid "Blog"
+msgstr "Блог"
+
+#: .\templates\news\index.html:295
+msgid "Rss Feed"
+msgstr "RSS-лента"
+
+#: .\templates\news\index.html:296 .\templates\registration\login.html:7
+#: .\templates\registration\login.html:12
+msgid "Login"
+msgstr "Войти"
+
+#: .\templates\news\index.html:297
+#, fuzzy
+#| msgid "Life & Style"
+msgid "Life &amp; Style"
+msgstr "Жизнь и стиль"
+
+#: .\templates\news\news_detail.html:24
+#, python-format
+msgid "There are %(comment_count)s comments on this news"
+msgstr "На эту новость оставили %(comment_count)s комментариев"
+
+#: .\templates\news\news_detail.html:43
+msgid "Leave comment"
+msgstr "Оставить комментарий"
+
+#: .\templates\news\news_detail.html:46
+msgid "Send"
+msgstr "Отправить"
+
+#: .\templates\news\news_detail.html:52
+msgid "Only registered users can leave comments"
+msgstr "Только зарегистрированные пользователи могут оставлять комментарии"
+
+#: .\templates\news\news_detail.html:53
+msgid " to leave a comment or "
+msgstr " чтобы оставить комментарий или "
+
+#: .\templates\news\news_detail.html:53
+msgid "the site."
+msgstr "перейти на сайт."
+
+#: .\templates\news\news_list.html:6
+msgid "News list"
+msgstr "Список новостей"
+
+#: .\templates\news\news_list.html:9
+msgid "All news list"
+msgstr "Список всех новостей"
+
+#: .\templates\news\search_result.html:5 .\templates\news\search_result.html:9
+msgid "Search results"
+msgstr "Результаты поиска"
+
+
+#: .\templates\news\sport.html:6
+#, fuzzy
+#| msgid "Sport News"
+msgid "Sport News"
+msgstr "Новости спорта"
+
+#: .\templates\news\technology.html:6
+#, fuzzy
+#| msgid "Technology"
+msgid "Technology News"
+msgstr "Новости технологий"
+
+#: .\templates\pages\admin_page.html:5 .\templates\pages\admin_page.html:9
+msgid "Admin Page"
+msgstr "Страница администратора"
+
+#: .\templates\pages\admin_page.html:10
+msgid "All admins"
+msgstr "Все администраторы"
+
+#: .\templates\pages\admin_page.html:13
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: .\templates\pages\admin_page.html:14
+msgid "First name"
+msgstr "Имя"
+
+#: .\templates\pages\admin_page.html:15
+msgid "Last name"
+msgstr "Фамилия"
+
+#: .\templates\pages\admin_page.html:27
+msgid "Add news"
+msgstr "Добавить новость"
+
+#: .\templates\pages\user_profile.html:5
+msgid "User Profile"
+msgstr "Профиль пользователя"
+
+#: .\templates\pages\user_profile.html:8
+msgid "You are welcome, "
+msgstr "Добро пожаловать, "
+
+#: .\templates\pages\user_profile.html:10
+msgid "Information about you"
+msgstr "Информация о вас"
+
+#: .\templates\pages\user_profile.html:14
+msgid "No profile photo available"
+msgstr "Нет доступного профильного фото"
+
+#: .\templates\pages\user_profile.html:18
+msgid "First name:"
+msgstr "Имя:"
+
+#: .\templates\pages\user_profile.html:19
+msgid "Last name:"
+msgstr "Фамилия:"
+
+#: .\templates\pages\user_profile.html:20
+msgid "Birthday:"
+msgstr "Дата рождения:"
+
+#: .\templates\pages\user_profile.html:21
+#: .\templates\registration\password_change_form.html:4
+#: .\templates\registration\password_change_form.html:7
+#: .\templates\registration\password_change_form.html:11
+#: .\templates\registration\password_reset_confirm.html:15
+#: .\templates\registration\password_reset_done.html:5
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+#: .\templates\pages\user_profile.html:22
+msgid "Change Profile"
+msgstr "Изменить профиль"
+
+#: .\templates\registration\logged_out.html:4
+msgid "Logout Page"
+msgstr "Страница выхода"
+
+#: .\templates\registration\logged_out.html:8
+msgid "You have left the site."
+msgstr "Вы покинули сайт."
+
+#: .\templates\registration\logged_out.html:8
+#, fuzzy
+#| msgid "Login"
+msgid "Re-Login"
+msgstr "Авторизоваться"
+
+#: .\templates\registration\login.html:4
+#, fuzzy
+#| msgid "Login"
+msgid "Login Page"
+msgstr "Авторизоваться"
+
+#: .\templates\registration\login.html:8
+msgid "Please fill out the form below to enter the site."
+msgstr "Пожалуйста, заполните форму ниже, чтобы войти на сайт."
+
+#: .\templates\registration\login.html:9
+msgid "If you forgot your password,"
+msgstr "Если вы забыли свой пароль,"
+
+#: .\templates\registration\login.html:9
+msgid "reset it"
+msgstr "сбросьте его"
+
+#: .\templates\registration\login.html:14
+msgid "Don't have an account? "
+msgstr "Нет аккаунта? "
+
+#: .\templates\registration\login.html:14
+msgid "Signup"
+msgstr "Зарегистрироваться"
+
+#: .\templates\registration\password_change_done.html:7
+msgid "User password has changed"
+msgstr "Пароль пользователя изменен"
+
+#: .\templates\registration\password_change_done.html:8
+msgid "The user's password has been successfully changed"
+msgstr "Пароль пользователя успешно изменен"
+
+#: .\templates\registration\password_change_form.html:8
+#: .\templates\registration\password_reset_confirm.html:9
+msgid "Fill out the form below to change your password"
+msgstr "Заполните форму ниже, чтобы изменить пароль"
+
+#: .\templates\registration\password_reset_complete.html:4
+msgid "Password changed successfully"
+msgstr "Пароль успешно изменен"
+
+#: .\templates\registration\password_reset_complete.html:7
+msgid "Password changed successfully."
+msgstr "Пароль успешно изменен."
+
+#: .\templates\registration\password_reset_complete.html:8
+msgid "Your password has been reset you can now "
+msgstr "Ваш пароль был сброшен и теперь вы можете "
+
+#: .\templates\registration\password_reset_complete.html:8
+msgid "again."
+msgstr "войти снова."
+
+#: .\templates\registration\password_reset_confirm.html:5
+msgid "Reset user password."
+msgstr "Сбросить пароль пользователя."
+
+#: .\templates\registration\password_reset_confirm.html:8
+msgid "Reset Password"
+msgstr "Сбросить пароль"
+
+#: .\templates\registration\password_reset_confirm.html:12
+msgid "Please enter the new password twice."
+msgstr "Пожалуйста, введите новый пароль дважды."
+
+#: .\templates\registration\password_reset_confirm.html:18
+msgid "You are using the wrong link, it may have been used before."
+msgstr ""
+"Вы используете неправильную ссылку, возможно, она была использована ранее."
+
+#: .\templates\registration\password_reset_done.html:8
+msgid "An email has been sent to change your password."
+msgstr "На вашу почту отправлено письмо для изменения пароля."
+
+#: .\templates\registration\password_reset_done.html:9
+msgid ""
+"To change your password, a password reset link has been sent to your email."
+msgstr ""
+"Чтобы изменить пароль, на вашу электронную почту была отправлена ссылка для "
+"сброса пароля."
+
+#: .\templates\registration\password_reset_done.html:10
+msgid "If you did not receive the email, please try again."
+msgstr "Есливы не получили письмо, попробуйте еще раз."
+
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\password_reset_form.html:7
+msgid "Password recovery"
+msgstr "Восстановление пароля"
+
+#: .\templates\registration\password_reset_form.html:8
+msgid "Enter your email to reset your password"
+msgstr "Введите свой адрес электронной почты, чтобы сбросить пароль"
+
+#: .\templates\registration\password_reset_form.html:11
+msgid "Send Email"
+msgstr "Отправить письмо на почту"

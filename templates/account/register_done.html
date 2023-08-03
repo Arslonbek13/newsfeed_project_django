@@ -1,0 +1,10 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% blocktrans %}You have successfully registered.{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+    <h1>{{ new_user.first_name }} {% blocktrans %}You have successfully registered.{% endblocktrans %}</h1>
+    <p>{% blocktrans %}You have successfully registered!{% endblocktrans %}</p>
+    <p>{% blocktrans %}You can {% endblocktrans %}<a href="{% url 'login' %}">{% blocktrans %}login{% endblocktrans %}</a> {% blocktrans %} to the site{% endblocktrans %}</p>
+{% endblock content %}

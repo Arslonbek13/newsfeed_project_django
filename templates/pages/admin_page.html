@@ -1,0 +1,29 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}Admin Page{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+
+<h1>{% blocktrans %}Admin Page{% endblocktrans %}</h1>
+<h3>{% blocktrans %}All admins{% endblocktrans %}</h3>
+<table class="table table-board table-responsive table-striped">
+    <tr>
+        <th>{% blocktrans %}Username{% endblocktrans %}</th>
+        <th>{% blocktrans %}First name{% endblocktrans %}</th>
+        <th>{% blocktrans %}Last name{% endblocktrans %}</th>
+    </tr>
+
+{% for user in admin_users %}
+    <tr>
+        <td>{{ user.username }}</td>
+        <td>{{ user.first_name }}</td>
+        <td>{{ user.last_name }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+<h2><a href="{% url 'news_create' %}" class="text-danger">{% blocktrans %}Add news{% endblocktrans %}</a></h2>
+
+{% endblock content %}

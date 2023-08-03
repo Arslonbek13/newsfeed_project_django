@@ -1,0 +1,14 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% blocktrans %}Change user information{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+    <h1>{% blocktrans %}Change user information.{% endblocktrans %}</h1>
+    <p>{% blocktrans %}You can change your information by filling out the form below.{% endblocktrans %}</p>
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+       {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        <button type="submit" class="btn btn-primary">{% blocktrans %}Save the change{% endblocktrans %}</button>
+    </form>
+{% endblock content %}

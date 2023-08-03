@@ -1,0 +1,27 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}Search results{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+
+    <h2>{% blocktrans %}Search results{% endblocktrans %}</h2>
+    <div class="card-deck container">
+        {% for news in all_news %}
+        <div class="card">
+            <img src="{{ news.image.url }}" class="card-img-top" alt="{{ news.title }}" width="30%">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{% url 'news_detail_page' news.slug %}" class="text-danger">{{ news.title }}</a>
+                </h5>
+                <span class="badge badge-primary">{{ news.category.name }}</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">{{ news.pub_date }}</small>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

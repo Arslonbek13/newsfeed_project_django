@@ -1,0 +1,24 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}User Profile{% endblocktrans %}{% endblock title %}
+
+{% block content %}
+    <h3>{% blocktrans %}You are welcome, {% endblocktrans %}{{user.username}}</h3>
+    <h3><a href="{% url 'logout' %}" style="color: red">{% blocktrans %}Logout{% endblocktrans %}</a></h3>
+    <h2>{% blocktrans %}Information about you{% endblocktrans %}</h2>
+{% if profile.photo %}
+    <img src="{{ profile.photo.url }}" width="20%"> <br>
+{% else %}
+    <p>{% blocktrans %}No profile photo available{% endblocktrans %}</p>
+{% endif %}
+    <label>Username:</label><input value="{{ user.username }}" readonly placeholder="Not filled"><br>
+    <label>Email:</label><input value="{{ user.email }}" readonly placeholder="Not filled"><br>
+    <label>{% blocktrans %}First name:{% endblocktrans %}</label><input value="{{ user.first_name }}" readonly placeholder="Not filled"><br>
+    <label>{% blocktrans %}Last name:{% endblocktrans %}</label><input value="{{ user.last_name }}" readonly placeholder="Not filled"><br>
+    <label>{% blocktrans %}Birthday:{% endblocktrans %}</label><input value="{{ profile.date_of_birth }}" readonly placeholder="Not filled"><br>
+    <h4><a href="{% url 'password_change' %}" style="color: red">{% blocktrans %}Change Password{% endblocktrans %}</a></h4>
+    <h4><a href="{% url 'edit_user_information' %}" style="color: red">{% blocktrans %}Change Profile{% endblocktrans %}</a></h4>
+
+{% endblock content %}
