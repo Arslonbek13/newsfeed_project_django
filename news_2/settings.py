@@ -141,8 +141,8 @@ GNU_MSGUNIQ = '/usr/bin/msguniq'
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = "/home/djangomo/django-mohirdev-demo.uz/django/staticfiles"
-STATIC_DIRS = ("/home/djangomo/django-mohirdev-demo.uz/django/static", )
+STATIC_ROOT = "/home/djangomo/django-arslonbek-demo.uz/django/staticfiles"
+STATIC_DIRS = ("/home/djangomo/django-arslonbek-demo.uz/django/static", )
 
 
 # # Locale
@@ -155,7 +155,7 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 MEDIA_URL = 'media/'
-MEDIA_ROOT = "/home/djangomo/django-mohirdev-demo.uz/django/media"
+MEDIA_ROOT = "/home/djangomo/django-arslonbek-demo.uz/django/media"
 
 # Locale
 # MEDIA_ROOT = BASE_DIR / 'media/'
